@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+body{ 
+    background-repeat: no-repeat;
+
+    background-size: cover;
+   background-color:rgba(20, 157, 150, 0.336);
+  }
+  label{
+    font-style: italic;
+    font-family:'Monotype Corsiva';
+    color:crimson ;
+    font-weight: bold;
+  }
+input{
+    font-style:italic;
+    font-family: 'Monotype Corsiva';
+    color:blueviolet;
+    font-weight: bold;
+}
+.para
+{
+   text-align: center;
+}
+</style>
+<body>
+    <div class="para">
+    <h3><center>Bus Ticket Booking Form</center></h3>
+	<form>
+	<label>Name:</label>
+	<input type="text" id="name" name="name"><br><br>
+	<label>FatherName:</label>
+	<input type="text" id="fname" name="fame"><br><br>
+	<label>Address:</label>
+	<input type="text" id="aname" name="aname"><br><br>
+	<label>Date of Birth:</label>
+	<input type="date" id="dob" name="dob"><br><br>
+	<label>From:</label>
+	<input type="text" id="e1" name="e1" required><br><br>
+	<label>To:</label>
+	<input type="text" id="e2" name="e2" required><br><br>
+    <label>Return:</label>
+    <input type="radio" id="re" name="r1" required><label>Yes</label>
+    <input type="radio" id="re" name="r1" required><label>No</label><br><br>
+	<label>Date on:</label>
+	<input type="date" id="e3" name="e3" required><br><br>
+	<label>Time:</label>
+	<input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required><br><br>
+    <label>Verification Id</label><br><br>
+    <input type="checkbox" id="c1" name="c1">Aadhar card<br><br>
+    <input type="checkbox" id="c2" name="c2">Pan card<br><br>
+    <input type="checkbox" id="c3" name="c3">Driving License<br><br>
+    <input type="checkbox" id="c4" name="c4">Voter Id<br><br>
+    <input type="checkbox" id="c5" name="c5">Other<br><br><br>
+
+    <center><input type="file" id="myFile" name="filename"></center>
+
+     <BR><br>
+<input type="Button" value="Cancel">
+<input type ="submit" value="Submit">
+</div>
+    </form>
+</body>
+</html>
